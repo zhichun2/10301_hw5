@@ -336,8 +336,6 @@ if __name__ == "__main__":
     output_size = 10
     train_nn = NN(lr, n_epochs, init_flag, train_input_size, n_hid, output_size)
 
-    test_input_size = X_te.shape[1]
-
     # train model
     train_alpha, train_beta, train_ce_arr, test_ce_arr = train(X_tr, y_tr, X_te, y_te, train_nn)
 
